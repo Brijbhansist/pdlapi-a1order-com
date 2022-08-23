@@ -14,9 +14,9 @@ import android.widget.Button
 import com.example.myapplication.BuildConfig
 object AppPreferences {
     const  val AppVersion = BuildConfig.VERSION_NAME
-    const val BASEURL = "http://api1.a1whm.com/AndroidAPI/"  // This is Test Api's
-    const val apiurl = "http://api1.a1whm.com/Packerapi/"    // This is Test Api's
-    const val PackerUrl= "http://api1.a1whm.com/PackerApi/"  // This is Test Api's
+    const val BASEURL = "api.a1order.com"  // This is Test Api's
+    const val apiurl = "api.a1order.com"    // This is Test Api's
+    const val PackerUrl= "api.a1order.com"  // This is Test Api's
     const val GET_ORDERS = "WDriverOrder.asmx/getOrders"
     const val SUBMIT_LOAD_ORDER = "WDriverOrder.asmx/SubmitLoadOrder"
     const val GET_ASSIGN_ORDER = "WDriverOrder.asmx/getDriverOrderList"
