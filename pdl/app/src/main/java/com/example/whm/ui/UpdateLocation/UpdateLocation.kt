@@ -96,6 +96,7 @@ class UpdateLocation : AppCompatActivity() {
             recyclerview.layoutManager = layoutManager
             UpdateLocationFunctoin()
             UpdateLocationData.clear()
+
         }
         else{
                 val dialog = this?.let { Dialog(it) }
