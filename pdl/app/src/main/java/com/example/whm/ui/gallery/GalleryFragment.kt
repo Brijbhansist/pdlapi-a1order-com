@@ -191,8 +191,32 @@ class GalleryFragment : Fragment() {
                             }
                             else {
                                 if (AppPreferences.internetConnectionCheck(this.context)) {
-                                    updatestock(ProductID_S, TotalStockQTY!!, TxtRemark!!)
-                                }else{
+                                    var Totalstockqtycheck = SweetAlertDialog(this.context, SweetAlertDialog.WARNING_TYPE)
+                                    Totalstockqtycheck.titleText = "Are you sure?"
+                                    Totalstockqtycheck.contentText = "You want to Update stock?"
+                                    Totalstockqtycheck.cancelButtonBackgroundColor = Color.parseColor("#4cae4c")
+                                    Totalstockqtycheck.setCancelButton( "Yes")
+                                    {
+                                            sDialog -> sDialog.dismissWithAnimation()
+                                    }
+                                    Totalstockqtycheck.confirmText = "No"
+                                    Totalstockqtycheck.confirmButtonBackgroundColor = Color.parseColor("#E60606")
+                                    Totalstockqtycheck.setCancelClickListener {
+                                            sDialog ->
+                                        sDialog.dismissWithAnimation()
+                                        if (AppPreferences.internetConnectionCheck(this.context)) {
+                                            updatestock(ProductID_S, TotalStockQTY!!, TxtRemark!!)
+                                        }else{
+                                            CheckInterNetDailog()
+                                        }
+                                    }
+                                    Totalstockqtycheck.setConfirmClickListener {
+                                            sDialog -> sDialog.dismissWithAnimation()
+                                    }
+                                    Totalstockqtycheck.setCanceledOnTouchOutside(false)
+                                    Totalstockqtycheck.show()
+                                }
+                                else{
                                     CheckInterNetDailog()
                                 }
                             }
@@ -836,7 +860,7 @@ class GalleryFragment : Fragment() {
                     if (presponscode == "200") {
                         var updates=   SweetAlertDialog(this.context, SweetAlertDialog.SUCCESS_TYPE)
                         updates.contentText = resmsg.toString()
-                        updates.confirmText = "ok"
+                        updates.confirmText="ok"
                         updates.setConfirmClickListener { sDialog -> sDialog.dismissWithAnimation()
                                 backinvetory?.isVisible = false
                                 addmproduct?.isVisible=true
