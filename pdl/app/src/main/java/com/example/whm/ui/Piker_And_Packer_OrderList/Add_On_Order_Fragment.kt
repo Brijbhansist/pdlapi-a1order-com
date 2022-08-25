@@ -175,7 +175,8 @@ class Add_On_Order_Fragment : Fragment() {
                                 }
                             }
                             pDialog.dismiss()
-                        } else {
+                        }
+                        else {
                             orderNotAvailable!!.text = "No order available"
                             orderNotAvailable!!.visibility=View.VISIBLE
                             val alerts = AlertDialog.Builder(this.context)

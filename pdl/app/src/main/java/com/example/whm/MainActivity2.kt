@@ -75,7 +75,7 @@ class MainActivity2 : AppCompatActivity() {
             nav_Menu.findItem(com.example.myapplication.R.id.nav_drfatpolist).isVisible = true
             nav_Menu.findItem(com.example.myapplication.R.id.nav_submitpolist).isVisible = true
             nav_Menu.findItem(com.example.myapplication.R.id.nav_revertpolist).isVisible = true
-            nav_Menu.findItem(com.example.myapplication.R.id.nav_internalpos).isVisible = true
+            nav_Menu.findItem(com.example.myapplication.R.id.nav_internalpos).isVisible = false
         }
         else if (usertype=="14")
         {

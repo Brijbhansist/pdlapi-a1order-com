@@ -91,7 +91,7 @@ class HomeFragment : Fragment() {
             btninventorypodraftlist.visibility = View.VISIBLE
             btnsubmitpolist.visibility = View.VISIBLE
             btnrevertpolist.visibility = View.VISIBLE
-            btnpointernallist.visibility = View.VISIBLE
+            btnpointernallist.visibility = View.GONE
         }
         if (Usertype.toString() == "14") {
             btnInvCheck.visibility = View.GONE
