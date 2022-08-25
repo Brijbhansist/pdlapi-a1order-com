@@ -70,7 +70,6 @@ class UpdateLocation : AppCompatActivity() {
                          UpdateLocationFunctoin()
                         ScanOrderBarcode.requestFocus()
                         ScanOrderBarcode.text.clear()
-
                         // btnPrevious.isEnabled=true
                     }
                 }
