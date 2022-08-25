@@ -74,7 +74,6 @@ class UpdateLocation : AppCompatActivity() {
                     }
                 }
                 false
-
             })
         }
         else {
