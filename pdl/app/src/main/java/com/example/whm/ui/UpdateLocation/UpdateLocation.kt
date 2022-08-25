@@ -73,7 +73,6 @@ class UpdateLocation : AppCompatActivity() {
                         // btnPrevious.isEnabled=true
                     }
                 }
-
                 false
 
             })
