@@ -124,7 +124,6 @@ class UpdateLocation : AppCompatActivity() {
         val preferences= PreferenceManager.getDefaultSharedPreferences(this@UpdateLocation)
         var accessToken = preferences.getString("accessToken", "")
         var empautoid = preferences.getString("EmpAutoId", "")
-
         val requestContainer = JSONObject()
         val JSONObj = JSONObject()
         val pobj = JSONObject()
