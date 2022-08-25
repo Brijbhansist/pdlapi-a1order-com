@@ -206,7 +206,8 @@ class GalleryFragment : Fragment() {
                                         sDialog.dismissWithAnimation()
                                         if (AppPreferences.internetConnectionCheck(this.context)) {
                                             updatestock(ProductID_S, TotalStockQTY!!, TxtRemark!!)
-                                        }else{
+                                        }
+                                        else{
                                             CheckInterNetDailog()
                                         }
                                     }
